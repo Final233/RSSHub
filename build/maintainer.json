@@ -2096,6 +2096,9 @@
     "/gitpod/changelog": [
         "TonyRL"
     ],
+    "/globallawreview/": [
+        "nczitzk"
+    ],
     "/gocn/": [
         "AtlanCI",
         "CcccFz"
@@ -6037,6 +6040,9 @@
     ],
     "/yahoo/news/:region/:category?": [
         "KeiLongW"
+    ],
+    "/yangtzeu/dongke/:path+": [
+        "nczitzk"
     ],
     "/yaohuo/": [
         "nczitzk"

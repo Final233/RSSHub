@@ -8282,6 +8282,20 @@
       }
     ]
   },
+  "globallawreview.org": {
+    "_name": "环球法律评论",
+    ".": [
+      {
+        "title": "期刊",
+        "docs": "https://docs.rsshub.app/journal.html#huan-qiu-fa-lu-ping-lun",
+        "source": [
+          "/Magazine/GetIssueContentList",
+          "/"
+        ],
+        "target": "/globallawreview"
+      }
+    ]
+  },
   "gocn.vip": {
     "_name": "GoCN",
     ".": [
@@ -13102,6 +13116,26 @@
         "title": "圈子 - 纯文字",
         "docs": "https://docs.rsshub.app/social-media.html#ji-ke",
         "source": "/topics/:id",
+        "target": "/jike/topic/text/:id"
+      }
+    ],
+    "web": [
+      {
+        "title": "用户动态",
+        "docs": "https://docs.rsshub.app/social-media.html#ji-ke",
+        "source": "/u/:uid",
+        "target": "/jike/user/:uid"
+      },
+      {
+        "title": "圈子",
+        "docs": "https://docs.rsshub.app/social-media.html#ji-ke",
+        "source": "/topic/:id",
+        "target": "/jike/topic/:id"
+      },
+      {
+        "title": "圈子 - 纯文字",
+        "docs": "https://docs.rsshub.app/social-media.html#ji-ke",
+        "source": "/topic/:id",
         "target": "/jike/topic/text/:id"
       }
     ]
@@ -24596,6 +24630,19 @@
           "/"
         ],
         "target": "/yahoo/news/:region/:category?"
+      }
+    ]
+  },
+  "yangtzeu.edu.cn": {
+    "_name": "长江大学",
+    ".": [
+      {
+        "title": "动物科学学院",
+        "docs": "https://docs.rsshub.app/universities.html#chang-jiang-da-xue-dong-wu-ke-xue-xue-yuan",
+        "source": [
+          "/:category",
+          "/"
+        ]
       }
     ]
   },
