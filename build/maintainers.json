@@ -913,6 +913,9 @@
   "/buaa/sme/:path{.+}?": [
     "MeanZhang"
   ],
+  "/buaa/lib/space/:path{newbook.*}": [
+    "OverflowCat"
+  ],
   "/buaa/news/:type": [
     "AlanDecode"
   ],
@@ -2188,7 +2191,7 @@
   ],
   "/gdsrx/:id?": [],
   "/gdut/oa_news/:type?": [
-    "Jim Kirisame"
+    "jim-kirisame"
   ],
   "/gelonghui/home/:tag?": [
     "TonyRL"
@@ -3121,6 +3124,9 @@
   "/imiker/ask/jinghua": [
     "nczitzk"
   ],
+  "/imop/tianshu": [
+    "zhkgo"
+  ],
   "/indiansinkuwait/latest": [
     "TonyRL"
   ],
@@ -3640,6 +3646,9 @@
   "/lkong/thread/:id": [
     "nczitzk",
     "ma6254"
+  ],
+  "/lmu/jobs": [
+    "StarDxxx"
   ],
   "/lofter/tag/:name?/:type?": [
     "hoilc",

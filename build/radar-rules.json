@@ -7966,6 +7966,19 @@
   },
   "hket.com": {
     "_name": "香港经济日报",
+    "china": [
+      {
+        "title": "新闻",
+        "docs": "https://docs.rsshub.app/routes/traditional-media",
+        "source": [
+          "/:category/*",
+          "/:category/*",
+          "/:category/*",
+          "/:category/*"
+        ],
+        "target": "/hket/:category"
+      }
+    ],
     "www": [
       {
         "title": "新闻",
@@ -7973,7 +7986,7 @@
         "source": [
           "/"
         ],
-        "target": "/hket/:category?"
+        "target": "/hket/"
       }
     ]
   },
@@ -8811,6 +8824,19 @@
           "/explore/find"
         ],
         "target": "/imiker/ask/jinghua"
+      }
+    ]
+  },
+  "imop.com": {
+    "_name": "imop",
+    "t": [
+      {
+        "title": "全部消息",
+        "docs": "https://docs.rsshub.app/routes/game",
+        "source": [
+          "/"
+        ],
+        "target": "/imop/tianshu"
       }
     ]
   },
@@ -10192,6 +10218,19 @@
           "/"
         ],
         "target": "/lkong/thread/:id"
+      }
+    ]
+  },
+  "lmu.de": {
+    "_name": "Ludwig Maximilian University of Munich",
+    "www": [
+      {
+        "title": "Job Openings",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/en/about-lmu/working-at-lmu/job-portal/academic-staff/"
+        ],
+        "target": "/lmu/lmu/jobs"
       }
     ]
   },
