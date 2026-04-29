@@ -542,6 +542,9 @@
   "/amz123/kx": [
     "defp"
   ],
+  "/android/pixel-update-bulletin": [
+    "TonyRL"
+  ],
   "/android/platform-tools-releases": [
     "nczitzk"
   ],
@@ -621,6 +624,10 @@
   "/app-sales/mostwanted/:time?/:country?": [
     "nczitzk"
   ],
+  "/apple/apps/update/:country/:id/:platform?": [
+    "EkkoG",
+    "nczitzk"
+  ],
   "/apple/design": [
     "jean-jacket"
   ],
@@ -636,10 +643,6 @@
     "Acring"
   ],
   "/apple/security-releases/:language?": [
-    "nczitzk"
-  ],
-  "/apple/apps/update/:country/:id/:platform?": [
-    "EkkoG",
     "nczitzk"
   ],
   "/appleinsider/:category?": [
@@ -1333,6 +1336,9 @@
   "/cahkms/:category?": [
     "nczitzk"
   ],
+  "/caicai/blog/:lang?": [
+    "TonyRL"
+  ],
   "/caijing/roll": [
     "TonyRL"
   ],
@@ -1419,6 +1425,9 @@
   ],
   "/castanet/:category?": [
     "TonyRL"
+  ],
+  "/castbox/channel/:channel": [
+    "ananyatimalsina"
   ],
   "/catti/news/:category": [
     "PrinOrange"
@@ -3009,6 +3018,9 @@
   "/fastbull/news": [
     "nczitzk"
   ],
+  "/fcbayern/news/:language?": [
+    "TonyRL"
+  ],
   "/fda/cdrh/:titleOnly?": [],
   "/fediverse/timeline/:account": [
     "DIYgod",
@@ -4372,6 +4384,9 @@
   "/hudsonrivertrading/blog/:section?": [
     "johan456789"
   ],
+  "/huggingface/activity/:user/likes": [
+    "dotwee"
+  ],
   "/huggingface/blog-community/:sort?": [
     "yuguorui"
   ],
@@ -5654,6 +5669,9 @@
     "TonyRL"
   ],
   "/metmuseum/exhibitions/:state?": [],
+  "/mhlw/monthly-labour-survey": [
+    "TonyRL"
+  ],
   "/mi/golden": [
     "nczitzk"
   ],
@@ -6993,6 +7011,9 @@
     "miaoyafeng",
     "Fatpandac"
   ],
+  "/projectjav/actress/:id": [
+    "Exat1979"
+  ],
   "/ps/monthly-games": [
     "justjustCC"
   ],
@@ -7396,7 +7417,7 @@
   "/ruc/hr/:category?": [
     "nczitzk"
   ],
-  "/runtrail/": [
+  "/runyeah/": [
     "TonyRL"
   ],
   "/rustcc/jobs": [
