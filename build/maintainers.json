@@ -535,6 +535,12 @@
   "/zhimap/:categoryUuid?/:recommend?": [
     "laampui"
   ],
+  "/zsxq/group/:id/:scope?": [
+    "KarasuShin"
+  ],
+  "/zsxq/user/:id": [
+    "KarasuShin"
+  ],
   "/abmedia/:category?": [
     "Fatpandac"
   ],
@@ -1071,12 +1077,6 @@
   ],
   "/zjmuseum/exhibition/:type?": [
     "magazian"
-  ],
-  "/zsxq/group/:id/:scope?": [
-    "KarasuShin"
-  ],
-  "/zsxq/user/:id": [
-    "KarasuShin"
   ],
   "/zyw/hot/:site?": [
     "nczitzk"
@@ -4527,6 +4527,9 @@
   ],
   "/f95zone/thread/:thread": [
     "wsmbsbbz"
+  ],
+  "/facebook/page/:id": [
+    "TonyRL"
   ],
   "/famitsu/category/:category?": [
     "TonyRL"
@@ -9155,6 +9158,12 @@
   "/wzbc/:type?": [
     "howel52"
   ],
+  "/wzbwg/news/:type": [
+    "magazian"
+  ],
+  "/wzbwg/zhanlan/specialexhibition": [
+    "magazian"
+  ],
   "/wzu/news/:type?": [
     "Chandler-Lu"
   ],
@@ -9271,7 +9280,7 @@
   "/xmanhua/:uid": [
     "Ye11"
   ],
-  "/xmlcom/": [
+  "/xml/": [
     "AboutRSS"
   ],
   "/xmnn/epaper/:id?": [

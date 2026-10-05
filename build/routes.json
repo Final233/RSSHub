@@ -7487,6 +7487,78 @@
     ],
     "lang": "zh-CN"
   },
+  "zsxq": {
+    "routes": {
+      "/group/:id/:scope?": {
+        "name": "星球",
+        "categories": [
+          "social-media"
+        ],
+        "path": "/group/:id/:scope?",
+        "example": "/zsxq/group/88855458825252",
+        "parameters": {
+          "id": "星球id，从网页端url中获取",
+          "scope": "栏目分类，默认为\"all\"，见下表"
+        },
+        "maintainers": [
+          "KarasuShin"
+        ],
+        "radar": [
+          {
+            "source": [
+              "wx.zsxq.com/dweb2/index/group/:id"
+            ]
+          }
+        ],
+        "features": {
+          "requireConfig": [
+            {
+              "name": "ZSXQ_ACCESS_TOKEN",
+              "description": "知识星球访问令牌,获取方式：\n1. 登录知识星球网页版\n2. 打开浏览器开发者工具，切换到 Application 面板\n3. 点击侧边栏中的Storage -> Cookies -> https://wx.zsxq.com\n4. 复制 Cookie 中的 zsxq_access_token 值"
+            }
+          ]
+        },
+        "description": "| all  | digests | by\\_owner | questions | tasks |\n| ---- | ------- | --------- | --------- | ----- |\n| 最新 | 精华    | 只看星主  | 问答      | 作业  |",
+        "location": "group.ts",
+        "module": "() => import('@/routes/zsxq/group.ts')"
+      },
+      "/user/:id": {
+        "name": "用户足迹",
+        "categories": [
+          "social-media"
+        ],
+        "path": "/user/:id",
+        "example": "/zsxq/user/2414218251",
+        "parameters": {
+          "id": "用户id，从网页端url中获取"
+        },
+        "maintainers": [
+          "KarasuShin"
+        ],
+        "radar": [
+          {
+            "source": [
+              "wx.zsxq.com/dweb2/index/footprint/:id"
+            ]
+          }
+        ],
+        "features": {
+          "requireConfig": [
+            {
+              "name": "ZSXQ_ACCESS_TOKEN",
+              "description": "知识星球访问令牌,获取方式：\n1. 登录知识星球网页版\n2. 打开浏览器开发者工具，切换到 Application 面板\n3. 点击侧边栏中的Storage -> Cookies -> https://wx.zsxq.com\n4. 复制 Cookie 中的 zsxq_access_token 值"
+            }
+          ]
+        },
+        "location": "user.ts",
+        "module": "() => import('@/routes/zsxq/user.ts')"
+      }
+    },
+    "apiRoutes": {},
+    "name": "知识星球",
+    "url": "zsxq.com",
+    "lang": "zh-CN"
+  },
   "abmedia": {
     "routes": {
       "/:category?": {
@@ -13757,78 +13829,6 @@
     "zh": {
       "name": "浙江省博物馆"
     }
-  },
-  "zsxq": {
-    "routes": {
-      "/group/:id/:scope?": {
-        "name": "星球",
-        "categories": [
-          "social-media"
-        ],
-        "path": "/group/:id/:scope?",
-        "example": "/zsxq/group/88855458825252",
-        "parameters": {
-          "id": "星球id，从网页端url中获取",
-          "scope": "栏目分类，默认为\"all\"，见下表"
-        },
-        "maintainers": [
-          "KarasuShin"
-        ],
-        "radar": [
-          {
-            "source": [
-              "wx.zsxq.com/dweb2/index/group/:id"
-            ]
-          }
-        ],
-        "features": {
-          "requireConfig": [
-            {
-              "name": "ZSXQ_ACCESS_TOKEN",
-              "description": "知识星球访问令牌,获取方式：\n1. 登录知识星球网页版\n2. 打开浏览器开发者工具，切换到 Application 面板\n3. 点击侧边栏中的Storage -> Cookies -> https://wx.zsxq.com\n4. 复制 Cookie 中的 zsxq_access_token 值"
-            }
-          ]
-        },
-        "description": "| all  | digests | by\\_owner | questions | tasks |\n| ---- | ------- | --------- | --------- | ----- |\n| 最新 | 精华    | 只看星主  | 问答      | 作业  |",
-        "location": "group.ts",
-        "module": "() => import('@/routes/zsxq/group.ts')"
-      },
-      "/user/:id": {
-        "name": "用户足迹",
-        "categories": [
-          "social-media"
-        ],
-        "path": "/user/:id",
-        "example": "/zsxq/user/2414218251",
-        "parameters": {
-          "id": "用户id，从网页端url中获取"
-        },
-        "maintainers": [
-          "KarasuShin"
-        ],
-        "radar": [
-          {
-            "source": [
-              "wx.zsxq.com/dweb2/index/footprint/:id"
-            ]
-          }
-        ],
-        "features": {
-          "requireConfig": [
-            {
-              "name": "ZSXQ_ACCESS_TOKEN",
-              "description": "知识星球访问令牌,获取方式：\n1. 登录知识星球网页版\n2. 打开浏览器开发者工具，切换到 Application 面板\n3. 点击侧边栏中的Storage -> Cookies -> https://wx.zsxq.com\n4. 复制 Cookie 中的 zsxq_access_token 值"
-            }
-          ]
-        },
-        "location": "user.ts",
-        "module": "() => import('@/routes/zsxq/user.ts')"
-      }
-    },
-    "apiRoutes": {},
-    "name": "知识星球",
-    "url": "zsxq.com",
-    "lang": "zh-CN"
   },
   "zyw": {
     "routes": {
@@ -42253,12 +42253,12 @@
             {
               "name": "BUKENAVI_EMAIL",
               "optional": true,
-              "description": "ぶけなび account e-mail. Optional — without it the route reads the public view."
+              "description": "ぶけなび account e-mail. Without it the route reads the public view."
             },
             {
               "name": "BUKENAVI_PASSWORD",
               "optional": true,
-              "description": "ぶけなび account password. Optional — without it the route reads the public view."
+              "description": "ぶけなび account password. Without it the route reads the public view."
             }
           ],
           "requirePuppeteer": false,
@@ -42317,12 +42317,12 @@
             {
               "name": "BUKENAVI_EMAIL",
               "optional": true,
-              "description": "ぶけなび account e-mail. Optional — without it the route reads the public view."
+              "description": "ぶけなび account e-mail. Without it the route reads the public view."
             },
             {
               "name": "BUKENAVI_PASSWORD",
               "optional": true,
-              "description": "ぶけなび account password. Optional — without it the route reads the public view."
+              "description": "ぶけなび account password. Without it the route reads the public view."
             }
           ],
           "requirePuppeteer": false,
@@ -61819,6 +61819,48 @@
     "name": "F95zone",
     "url": "f95zone.to",
     "description": "F95zone is a community for adult games and animations."
+  },
+  "facebook": {
+    "routes": {
+      "/page/:id": {
+        "path": "/page/:id",
+        "categories": [
+          "social-media"
+        ],
+        "example": "/facebook/page/NASA",
+        "parameters": {
+          "id": "Page ID"
+        },
+        "features": {
+          "requireConfig": [
+            {
+              "name": "FACEBOOK_COOKIE",
+              "optional": true,
+              "description": "Facebook cookie, only `c_user` and `xs` are required."
+            }
+          ],
+          "antiCrawler": true
+        },
+        "radar": [
+          {
+            "source": [
+              "www.facebook.com/:id"
+            ]
+          }
+        ],
+        "name": "Page",
+        "maintainers": [
+          "TonyRL"
+        ],
+        "url": "www.facebook.com",
+        "location": "page.ts",
+        "module": "() => import('@/routes/facebook/page.ts')"
+      }
+    },
+    "apiRoutes": {},
+    "name": "Facebook",
+    "url": "www.facebook.com",
+    "lang": "en"
   },
   "famitsu": {
     "routes": {
@@ -123109,6 +123151,61 @@
     "url": "www.wzbc.edu.cn",
     "lang": "zh-CN"
   },
+  "wzbwg": {
+    "routes": {
+      "/news/:type": {
+        "path": "/news/:type",
+        "categories": [
+          "travel"
+        ],
+        "example": "/wzbwg/news/24",
+        "parameters": {
+          "type": "News Type, supported values: 24（重要资讯）, 23（通知公告）, 25（工作动态）"
+        },
+        "radar": [
+          {
+            "source": [
+              "www.wzbwg.com/news/:type"
+            ],
+            "target": "/news/:type"
+          }
+        ],
+        "name": "资讯",
+        "maintainers": [
+          "magazian"
+        ],
+        "location": "news.ts",
+        "module": "() => import('@/routes/wzbwg/news.ts')"
+      },
+      "/zhanlan/specialexhibition": {
+        "path": "/zhanlan/specialexhibition",
+        "categories": [
+          "travel"
+        ],
+        "example": "/wzbwg/zhanlan/specialexhibition",
+        "radar": [
+          {
+            "source": [
+              "www.wzbwg.com/zhanlan/73/image"
+            ],
+            "target": "/zhanlan/specialexhibition"
+          }
+        ],
+        "name": "最新展览",
+        "maintainers": [
+          "magazian"
+        ],
+        "location": "zhanlan.tsx",
+        "module": "() => import('@/routes/wzbwg/zhanlan.tsx')"
+      }
+    },
+    "apiRoutes": {},
+    "name": "National Museum of Chinese Writing",
+    "url": "www.wzbwg.com",
+    "zh": {
+      "name": "中国文字博物馆"
+    }
+  },
   "wzu": {
     "routes": {
       "/news/:type?": {
@@ -124265,14 +124362,14 @@
     "url": "xmanhua.com",
     "lang": "zh-CN"
   },
-  "xmlcom": {
+  "xml": {
     "routes": {
       "/": {
         "path": "/",
         "categories": [
           "programming"
         ],
-        "example": "/xmlcom",
+        "example": "/xml",
         "name": "Articles and News",
         "maintainers": [
           "AboutRSS"
@@ -124286,7 +124383,7 @@
         ],
         "description": "The official Atom feed (/feed/all/) truncates every entry to a 128 character summary and carries no category tags. This route fetches the full body from each detail page and extracts the tags of that page into category.",
         "location": "index.ts",
-        "module": "() => import('@/routes/xmlcom/index.ts')"
+        "module": "() => import('@/routes/xml/index.ts')"
       }
     },
     "apiRoutes": {},
